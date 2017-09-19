@@ -1,0 +1,12 @@
+body {
+    margin-top: 100px;
+    text-align: center;
+}
+.lang {
+    display: none;
+}
+
+.lang.visible {
+    display: inline;
+    /* @todo: visibility? font-size? etc? */
+}
