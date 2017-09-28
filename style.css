@@ -1,4 +1,4 @@
-body {
+#tasks, #additional {
     display: flex;
     justify-content: space-around;
 }
@@ -16,4 +16,10 @@ a {
 }
 a:hover {
     background-color: #4D5FDF
+}
+#additional a {
+    padding-top: 15px;
+}
+#additional a:hover {
+    background-color: #E256BF;
 }
