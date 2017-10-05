@@ -20,4 +20,6 @@ document.querySelector("body form input[type=button]").onclick = function () {
     if (date !== moment().format('DD/MM/YYYY')) {
         alert("Your data is invalid, wrong date!");  
     } 
+    else {alert("Your data has been sent to the server!");
+    }
 };
