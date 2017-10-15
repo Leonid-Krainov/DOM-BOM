@@ -11,15 +11,20 @@ document.querySelector("body form input[type=button]").onclick = function () {
     var age = document.querySelector("body form input[name=age]").value;
     var userName = document.querySelector("body form input[name=username]").value;
     var date = document.querySelector("body form input[name=date]").value;
+    var valid = true;
     if (age == "" || age.match(/\D/g) || age<0) {
         alert("Your data is invalid, wrong age!");
+        valid = false;
     }
     if (!userName.match(/^user_/g)) {
-        alert("Your data is invalid, wrong username!");       
+        alert("Your data is invalid, wrong username!");
+        valid = false;       
     }   
     if (date !== moment().format('DD/MM/YYYY')) {
-        alert("Your data is invalid, wrong date!");  
+        alert("Your data is invalid, wrong date!");
+        valid = false;  
     } 
-    else {alert("Your data has been sent to the server!");
+    if (valid == true) {
+        alert("Your data has been sent to the server!");
     }
 };

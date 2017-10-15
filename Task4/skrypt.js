@@ -1,5 +1,5 @@
 if (localStorage.getItem("lang") === null) {
-    defaultLanguage = navigator.language.toLocaleLowerCase();
+    defaultLanguage = navigator.language.toLocaleLowerCase().substr(0,2);
 } else {
     defaultLanguage = localStorage.getItem("lang");   
 }
